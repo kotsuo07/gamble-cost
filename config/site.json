@@ -1,0 +1,9 @@
+{
+  "name": "暗号資産コストウォッチ",
+  "tagline": "販売所と取引所の「見えない手数料」を毎日計測",
+  "description": "国内の暗号資産(仮想通貨)取引所・販売所で、ビットコインなどを買ってすぐ売ったら何円減るのかを1日4回自動計測。スプレッドと手数料を含めた実質コストを比較します。",
+  "site_url": "https://kotsuo07.github.io/gamble-cost",
+  "base_path": "/gamble-cost",
+  "operator": "kotsuo07",
+  "lang": "ja"
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+<h1>{{ title }}</h1>
+<p class="meta">{{ date }}{% if updated %}(更新 {{ updated }}){% endif %}</p>
+{{ body | safe }}
+</article>
+<script type="application/ld+json">{{ jsonld | safe }}</script>
+<h2>関連記事</h2>
+<ul class="posts">
+{% for p in related %}<li><span class="d">{{ p.date }}</span><a href="{{ u(p.path) }}">{{ p.title }}</a></li>{% endfor %}
+</ul>
+{% endblock %}

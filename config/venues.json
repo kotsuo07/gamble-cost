@@ -1,0 +1,47 @@
+{
+  "_note": "手数料は取引所(板)のテイカー手数料・最も条件の悪い基本ランク。checked は確認日。変更されることがあるので月1回見直す。",
+  "venues": {
+    "bitflyer": {
+      "name": "bitFlyer",
+      "exchange_fee_taker": {"BTC": 0.0015},
+      "fee_source": "https://bitflyer.com/ja-jp/commission (Lightning現物、直近30日取引量10万円未満は0.15%)",
+      "checked": "2026-11-02",
+      "affiliate_url": ""
+    },
+    "coincheck": {
+      "name": "Coincheck",
+      "exchange_fee_taker": {"BTC": 0.0},
+      "fee_source": "取引所のBTC取引手数料は無料(公式案内、複数の比較記事で確認)",
+      "checked": "2026-11-02",
+      "affiliate_url": ""
+    },
+    "bitbank": {
+      "name": "bitbank",
+      "exchange_fee_taker": {"BTC": 0.001},
+      "fee_source": "https://bitbank.cc/blog/articles/726061459 (2026-02-02からBTC/JPYテイカー0.1%)",
+      "checked": "2026-11-02",
+      "affiliate_url": ""
+    },
+    "gmo": {
+      "name": "GMOコイン",
+      "exchange_fee_taker": {"BTC": 0.0005},
+      "fee_source": "取引所(現物)BTC・ETH・XRPはTaker0.05%(比較記事で確認、公式の手数料ページで要再確認)",
+      "checked": "2026-11-02",
+      "affiliate_url": ""
+    },
+    "bittrade": {
+      "name": "BitTrade",
+      "exchange_fee_taker": {"BTC": 0.0},
+      "fee_source": "取引所形式の取引手数料は無料(比較記事で確認、公式で要再確認)",
+      "checked": "2026-11-02",
+      "affiliate_url": ""
+    },
+    "sbivc": {
+      "name": "SBI VCトレード",
+      "exchange_fee_taker": {"BTC": 0.0005},
+      "fee_source": "取引所Taker0.05%(比較記事で確認、公式で要再確認)",
+      "checked": "2026-11-02",
+      "affiliate_url": ""
+    }
+  }
+}

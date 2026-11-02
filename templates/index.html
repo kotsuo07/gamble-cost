@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>ビットコインを10万円買ってすぐ売ると、いくら減る？</h1>
+<p class="meta">最終計測: {{ latest_time }}(1日4回自動更新)</p>
+
+{% if hero %}
+<div class="tiles">
+  <div class="tile"><div class="lbl">販売所(平均)で往復</div><div class="big">−{{ hero.dealer_yen }}円</div><div class="sub">10万円 → {{ hero.dealer_left }}円 / {{ hero.dealer_pct }}%</div></div>
+  <div class="tile"><div class="lbl">取引所(最安: {{ hero.ex_name }})で往復</div><div class="big">−{{ hero.ex_yen }}円</div><div class="sub">10万円 → {{ hero.ex_left }}円 / {{ hero.ex_pct }}%</div></div>
+  <div class="tile"><div class="lbl">差</div><div class="big">約{{ hero.ratio }}倍</div><div class="sub">販売所のコスト ÷ 取引所のコスト</div></div>
+</div>
+{% endif %}
+
+<h2>BTC 10万円の往復コストランキング</h2>
+<p class="note">10万円分を買い、同じ量をすぐ売ったときに失う割合です。取引所は板の注文を順に買い進めた価格とテイカー手数料(往復)込み、販売所は買値と売値の差です。</p>
+<table>
+<thead><tr><th>順位</th><th>会社</th><th>形式</th><th class="num">往復コスト</th><th class="num">10万円が</th><th class="num">手数料(片道)</th></tr></thead>
+<tbody>
+{% for r in ranking %}
+<tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.type_ja }}</td><td class="num">{{ r.pct }}%</td><td class="num">{{ r.left }}円</td><td class="num">{{ r.fee }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% if missing %}<p class="note">今回取得できなかったもの: {{ missing }}</p>{% endif %}
+
+<h2>過去30日の推移(BTC・10万円往復)</h2>
+{{ chart | safe }}
+
+<h2>販売所の売値・買値の差(銘柄別)</h2>
+<table>
+<thead><tr><th>銘柄</th>{% for v in dealer_venues %}<th class="num">{{ v }}</th>{% endfor %}</tr></thead>
+<tbody>
+{% for row in dealer_table %}
+<tr><td>{{ row.coin }}</td>{% for c in row.cells %}<td class="num">{{ c }}</td>{% endfor %}</tr>
+{% endfor %}
+</tbody>
+</table>
+<p class="note">Coincheckは販売所の売値・買値を公開ページに載せていないため計測対象外です。計測方法の詳細は<a href="{{ u('/method/') }}">こちら</a>。</p>
+
+<h2>新着記事</h2>
+<ul class="posts">
+{% for p in posts[:8] %}<li><span class="d">{{ p.date }}</span><a href="{{ u(p.path) }}">{{ p.title }}</a></li>{% else %}<li>準備中です</li>{% endfor %}
+</ul>
+{% endblock %}
