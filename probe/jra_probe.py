@@ -10,14 +10,16 @@ t = post("/JRADB/accessS.html", "pw01sli00/AF")   # 開催一覧
 out["list_len"] = len(t)
 acts = re.findall(r"doAction\('(/JRADB/accessS\.html)',\s*'([^']+)'\)", t)
 out["list_actions"] = acts[:15]
-# 開催(日)→レース一覧→レース結果 と順にたどる
-step = acts[0][1] if acts else None
-for depth in range(3):
-    if not step: break
-    t = post("/JRADB/accessS.html", step)
-    acts = [a for a in re.findall(r"doAction\('(/JRADB/accessS\.html)',\s*'([^']+)'\)", t) if a[1] != step]
-    out[f"d{depth}_actions"] = acts[:8]
-    out[f"d{depth}_text"] = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", t))[:2500]
-    step = acts[0][1] if acts else None
+srl = [a[1] for a in acts if a[1].startswith("pw01srl")]
+out["srl"] = srl[:5]
+t = post("/JRADB/accessS.html", srl[0])
+sde = list(dict.fromkeys(re.findall(r"(pw01sde[0-9A-Za-z/]+)", t)))
+out["sde"] = sde[:15]
+t = post("/JRADB/accessS.html", sde[0])
+txt = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", t))
+i = txt.find("着順")
+out["result_text"] = txt[i-300:i+3000]
+j = txt.find("払戻金")
+out["payout_text"] = txt[j:j+1200]
 os.makedirs("probe/out", exist_ok=True)
 json.dump(out, open("probe/out/jra_probe.json", "w"), ensure_ascii=False, indent=1)
