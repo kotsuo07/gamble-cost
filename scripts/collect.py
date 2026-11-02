@@ -105,6 +105,9 @@ def roundtrip_loss(bids, asks, jpy, fee):
 # ---------- 販売所 ----------
 
 def dealer_bitflyer(coin, ctx):
+    if coin != "BTC":
+        # このデータはBTCしか返さない(ETH・XRPを指定してもBTCの値になる)
+        raise ValueError("bitFlyer販売所はBTCのみ対応")
     d = get_json(f"https://bitflyer.com/api/echo/price?currency_pair={coin.lower()}_jpy",
                  referer="https://bitflyer.com/ja-jp/bitcoin-chart")
     return num(d["bid"]), num(d["ask"])
@@ -134,7 +137,8 @@ def dealer_gmo(coin, ctx):
     close = [r for r in ctx["gmo_rates"]
              if abs(((num(r["bid"]) + num(r["ask"])) / 2) / ref - 1) < 0.03]
     if len(close) > 1:
-        raise ValueError("GMO販売所の候補が複数あり判定できない")
+        desc = ";".join(f"{r['productId']}:{r['bid']}/{r['ask']}" for r in close)
+        raise ValueError(f"GMO販売所の候補が複数: {desc}")
     return num(best[1]["bid"]), num(best[1]["ask"])
 
 
@@ -225,7 +229,7 @@ def main():
                 if bid >= ask or loss > 0.2 or (ref and abs((bid + ask) / 2 / ref - 1) > 0.05):
                     row.update({"status": "suspect", "note": "異常値の可能性"})
             except Exception as e:  # noqa: BLE001
-                row.update({"status": "error", "note": repr(e)[:150]})
+                row.update({"status": "error", "note": repr(e)[:400]})
             rows.append(row)
             time.sleep(0.5)
 
