@@ -4,19 +4,43 @@
   "status": 200,
   "len": 39754,
   "ctype": "application/x-lzh-compressed",
-  "head": ""
+  "head": "",
+  "lha": [
+   0,
+   "\nprobe/tmp/k261101.txt\t- Melting  :  .........................\nprobe/tmp/k261101.txt\t- Melting  :  ooooooooooooooooooooooooo\nprobe/tmp/k261101.txt\t- Melted  \n",
+   ""
+  ],
+  "files": [
+   "k261101.txt",
+   "K.lzh"
+  ],
+  "sample": "STARTK\r\n24KBGN\r\n大　村［成績］     11/ 1      サンケイスポーツ杯　  第 3日\r\n\r\n                            ＊＊＊　競走成績　＊＊＊\r\n\r\n          サンケイスポーツ杯　　　　　　　　　　　　　　　　\r\n\r\n   第 3日          2026/11/ 1                             ボートレース大　村\r\n\r\n               －内容については主催者発行のものと照合して下さい－\r\n\r\n   [払戻金]       ３連単           ３連複           ２連単         ２連複\r\n           1R  1-5-2    7320    1-2-5    1480    1-5    1910    1-5    1450\r\n           2R  1-4-6   27560    1-4-6    7380    1-4    3620    1-4    2510\r\n           3R  4-2-6    2550    2-4-6     560    4-2    1560    2-4     530\r\n           4R  1-4-5     700    1-4-5     260    1-4     350    1-4     260\r\n           5R  4-1-2    6490    1-2-4     440    4-1    1270    1-4     300\r\n           6R  1-3-6    2550    1-3-6     790    1-3     710    1-3     350\r\n           7R  1-2-4     780    1-2-4     500    1-2     190    1-2     190\r\n           8R  3-1-5    2640    1-3-5     440    3-1    1210    1-3     390\r\n           9R  2-1-3    1050    1-2-3     360    2-1     290    1-2     120\r\n          10R  1-2-5     950    1-2-5     470    1-2     230    1-2     210\r\n          11R  1-3-6    1870    1-3-6    1270    1-3     320    1-3     290\r\n          12R  1-3-4    1430    1-3-4     900    1-3     610    1-3     530\r\n\r\n\r\n\r\n   1R       予選　　　　                 H1800m  晴　  風  南西　 2m  波　  1cm\r\n  着 艇 登番 　選　手　名　　ﾓｰﾀｰ ﾎﾞｰﾄ 展示 進入 ｽﾀｰﾄﾀｲﾐﾝｸ ﾚｰｽﾀｲﾑ 逃げ　　　\r\n-------------------------------------------------------------------------------\r\n  01  1 5086 本　村　　　　大 12   72  6.87   1    0.12   ",
+  "lines": 3922
  },
  "boat_B": {
   "url": "https://www1.mbrace.or.jp/od2/B/202611/b261101.lzh",
   "status": 200,
   "len": 32492,
   "ctype": "application/x-lzh-compressed",
-  "head": ""
+  "head": "",
+  "lha": [
+   0,
+   "\nprobe/tmp/b261101.txt\t- Melting  :  ...................\nprobe/tmp/b261101.txt\t- Melting  :  ooooooooooooooooooo\nprobe/tmp/b261101.txt\t- Melted  \n",
+   ""
+  ],
+  "files": [
+   "b261101.txt",
+   "k261101.txt",
+   "B.lzh",
+   "K.lzh"
+  ],
+  "sample": "STARTK\r\n24KBGN\r\n大　村［成績］     11/ 1      サンケイスポーツ杯　  第 3日\r\n\r\n                            ＊＊＊　競走成績　＊＊＊\r\n\r\n          サンケイスポーツ杯　　　　　　　　　　　　　　　　\r\n\r\n   第 3日          2026/11/ 1                             ボートレース大　村\r\n\r\n               －内容については主催者発行のものと照合して下さい－\r\n\r\n   [払戻金]       ３連単           ３連複           ２連単         ２連複\r\n           1R  1-5-2    7320    1-2-5    1480    1-5    1910    1-5    1450\r\n           2R  1-4-6   27560    1-4-6    7380    1-4    3620    1-4    2510\r\n           3R  4-2-6    2550    2-4-6     560    4-2    1560    2-4     530\r\n           4R  1-4-5     700    1-4-5     260    1-4     350    1-4     260\r\n           5R  4-1-2    6490    1-2-4     440    4-1    1270    1-4     300\r\n           6R  1-3-6    2550    1-3-6     790    1-3     710    1-3     350\r\n           7R  1-2-4     780    1-2-4     500    1-2     190    1-2     190\r\n           8R  3-1-5    2640    1-3-5     440    3-1    1210    1-3     390\r\n           9R  2-1-3    1050    1-2-3     360    2-1     290    1-2     120\r\n          10R  1-2-5     950    1-2-5     470    1-2     230    1-2     210\r\n          11R  1-3-6    1870    1-3-6    1270    1-3     320    1-3     290\r\n          12R  1-3-4    1430    1-3-4     900    1-3     610    1-3     530\r\n\r\n\r\n\r\n   1R       予選　　　　                 H1800m  晴　  風  南西　 2m  波　  1cm\r\n  着 艇 登番 　選　手　名　　ﾓｰﾀｰ ﾎﾞｰﾄ 展示 進入 ｽﾀｰﾄﾀｲﾐﾝｸ ﾚｰｽﾀｲﾑ 逃げ　　　\r\n-------------------------------------------------------------------------------\r\n  01  1 5086 本　村　　　　大 12   72  6.87   1    0.12   ",
+  "lines": 3922
  },
  "boat_web_result": {
   "url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=04&hd=20261101",
   "status": 200,
-  "len": 58529,
+  "len": 58528,
   "ctype": "text/html;charset=UTF-8",
   "head": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n\t  \n\t  <head id=\"TRACP110A_1\">\n\t\t<meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\" /> \n\t    <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n\t    <meta charset=\"UTF-8\" />\n\t    <title>結果｜BOAT RACE オフィシャルウェブサイト</title>\n\t    <meta name=\"Description\" content=\"\" />\n\t    <meta name=\"Keywords\" content=\"\" />\n\t    <meta name=\"format-detection\" content=\"telephone=no\" />\n\t    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n\t    <link rel=\"stylesheet\" href=\"/static_extra/pc/css/main.css\" />\n\t    <link rel=\"stylesheet\" href=\"/static_extra/pc/css/3rdadd_main.css\" />\n\t    <script src=\"/static_extra/js/libs/jquery-1.11.3.min.js\"></script>\n\t\t<script src=\"/static_extra/pc/js/libs/modernizr.min.js\"></script>\n\t    <script src=\"/owpc/TRAC110-TRACPC110PR.js\"></script>\n\t    <script src=\"/owpc/js/ow-common.js\"></script>\n<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push([\"addVar\",{\"rua.upush\":\"false\",\"rua.cpush\":\"false\",\"rua.upre\":\"false\",\"rua.cpre\":\"false\",\"rua.uprl\":\"false\",\"rua.cprl\":\"false\",\"rua.cprf\":\"false\",\"rua.trans\":\"\",\"rua.cook\":\"false\",\"rua.ims\":\"false\",\"rua.ufprl\":\"false\",\"rua.cfprl\":\"false\",\"rua.isuxp\":\"false\",\"rua.texp\":\"norulematch\",\"rua.ceh\":\"false\",\"rua.ueh\":\"false\",\"rua.ieh.st\":\"0\"}]);</script>\n                                <script>!function(e){var n=\"https://s.go-mpulse.net/boomerang/\";if(\"False\"==\"True\")e.BOOMR"
  },
@@ -61,5 +85,87 @@
   "len": 26,
   "ctype": "text/plain",
   "head": "User-agent: *\r\nDisallow:\r\n"
- }
+ },
+ "jra_cnames": [
+  [
+   "/JRADB/accessI.html",
+   "pw01ide01/4F"
+  ],
+  [
+   "/JRADB/accessD.html",
+   "pw01dli00/F3"
+  ],
+  [
+   "/JRADB/accessO.html",
+   "pw15oli00/6D"
+  ],
+  [
+   "/JRADB/accessS.html",
+   "pw01sli00/AF"
+  ],
+  [
+   "/JRADB/accessH.html",
+   "pw01hli00/03"
+  ],
+  [
+   "/JRADB/accessT.html",
+   "pw03trl00/29"
+  ],
+  [
+   "/JRADB/accessR.html",
+   "pw02uliD19999"
+  ],
+  [
+   "/JRADB/accessW.html",
+   "pr13rli00/8E"
+  ],
+  [
+   "/JRADB/accessV.html",
+   "pv156liH1/98"
+  ],
+  [
+   "/JRADB/accessX.html",
+   "pr12rnk00/01"
+  ],
+  [
+   "/JRADB/accessR.html",
+   "pw02uliD19999"
+  ],
+  [
+   "/JRADB/accessS.html",
+   "pw01skl00999999/B3"
+  ],
+  [
+   "/JRADB/accessSS.html",
+   "pk01skl009999/A6"
+  ],
+  [
+   "/JRADB/accessI.html",
+   "pw01ide01/4F"
+  ],
+  [
+   "/JRADB/accessD.html",
+   "pw01dli00/F3"
+  ],
+  [
+   "/JRADB/accessO.html",
+   "pw15oli00/6D"
+  ],
+  [
+   "/JRADB/accessS.html",
+   "pw01sli00/AF"
+  ],
+  [
+   "/JRADB/accessH.html",
+   "pw01hli00/03"
+  ],
+  [
+   "/JRADB/accessT.html",
+   "pw03trl00/29"
+  ],
+  [
+   "/JRADB/accessR.html",
+   "pw02uliD19999"
+  ]
+ ]
 }
