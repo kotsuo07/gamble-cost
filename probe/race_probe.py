@@ -22,7 +22,8 @@ for kind in ["K", "B"]:
         os.makedirs("probe/tmp", exist_ok=True)
         p = f"probe/tmp/{kind}.lzh"; open(p, "wb").write(body)
         subprocess.run(["lha", "xqw=probe/tmp", p])
-        for f in glob.glob("probe/tmp/*.TXT"):
+        out[f"boat_{kind}"]["files"] = os.listdir("probe/tmp")
+        for f in [x for x in glob.glob("probe/tmp/*") if not x.endswith(".lzh")]:
             txt = open(f, "rb").read().decode("cp932", "replace")
             out[f"boat_{kind}"]["sample"] = txt[:1500]
             out[f"boat_{kind}"]["lines"] = txt.count("\n")
@@ -37,6 +38,11 @@ for name, url in {
 }.items():
     info, _ = get(url, 1500)
     out[name] = {"url": url, **info}
+import re
+info, body = get("https://www.jra.go.jp/keiba/", 0)
+if body:
+    t = body.decode("shift_jis", "replace")
+    out["jra_cnames"] = re.findall(r"doAction\('([^']+)',\s*'([^']+)'\)", t)[:20]
 os.makedirs("probe/out", exist_ok=True)
 json.dump(out, open("probe/out/race_probe.json", "w"), ensure_ascii=False, indent=1)
 print(json.dumps({k: (v.get("status"), v.get("len"), v.get("error")) for k, v in out.items()}, ensure_ascii=False))
