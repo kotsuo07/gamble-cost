@@ -7,7 +7,7 @@
 <div class="tiles">
   <div class="tile"><div class="lbl">販売所(平均)で往復</div><div class="big">−{{ hero.dealer_yen }}円</div><div class="sub">10万円 → {{ hero.dealer_left }}円 / {{ hero.dealer_pct }}%</div></div>
   <div class="tile"><div class="lbl">取引所(最安: {{ hero.ex_name }})で往復</div><div class="big">−{{ hero.ex_yen }}円</div><div class="sub">10万円 → {{ hero.ex_left }}円 / {{ hero.ex_pct }}%</div></div>
-  <div class="tile"><div class="lbl">差</div><div class="big">約{{ hero.ratio }}倍</div><div class="sub">販売所のコスト ÷ 取引所のコスト</div></div>
+  <div class="tile"><div class="lbl">差額</div><div class="big">{{ hero.diff_yen }}円</div><div class="sub">10万円の往復で、販売所のほうが多く失う額</div></div>
 </div>
 {% endif %}
 

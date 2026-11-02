@@ -74,7 +74,7 @@ def chart_svg(rows):
         ex_pts.append((d, min(vals) if vals else None))
     series.append(("取引所(最安)", "var(--neutral)", "6 4", ex_pts))
 
-    W, H, L, R, T, B = 800, 300, 48, 16, 14, 34
+    W, H, L, R, T, B = 440, 260, 34, 10, 10, 28
     vmax = max([v for *_, pts in series for _, v in pts if v is not None] + [1])
     top = (int(vmax) + 1) if vmax > 1 else 1
     n = len(dates)
@@ -91,7 +91,7 @@ def chart_svg(rows):
         parts.append(f'<line x1="{L}" x2="{W - R}" y1="{y(g):.1f}" y2="{y(g):.1f}" stroke="var(--line)" stroke-width="1"/>')
         parts.append(f'<text x="{L - 6}" y="{y(g) + 4:.1f}" text-anchor="end" font-size="11" fill="var(--muted)">{g}%</text>')
     for i, d in enumerate(dates):
-        if n <= 8 or i % max(1, n // 6) == 0 or i == n - 1:
+        if n <= 6 or i % max(1, n // 5) == 0 or i == n - 1:
             parts.append(f'<text x="{x(i):.1f}" y="{H - 10}" text-anchor="middle" font-size="11" fill="var(--muted)">{d[5:].replace("-", "/")}</text>')
     for name, color, dash, pts in series:
         segs, cur = [], []
@@ -138,7 +138,7 @@ def latest_view(latest):
         ep = best["rt_100000_pct"]
         hero = {"dealer_pct": f"{dp:.2f}", "dealer_yen": yen(1000 * dp), "dealer_left": yen(100000 - 1000 * dp),
                 "ex_name": VENUES[best["venue"]]["name"], "ex_pct": f"{ep:.3f}", "ex_yen": yen(1000 * ep),
-                "ex_left": yen(100000 - 1000 * ep), "ratio": f"{dp / ep:,.0f}" if ep > 0 else "—"}
+                "ex_left": yen(100000 - 1000 * ep), "diff_yen": yen(1000 * (dp - ep))}
     dealer_venues = [vid for vid, _ in SERIES]
     table = []
     for coin in ["BTC", "ETH", "XRP"]:
