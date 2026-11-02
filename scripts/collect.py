@@ -123,9 +123,10 @@ def dealer_gmo(coin, ctx):
     if not ref:
         raise ValueError("GMO取引所の参照価格なし")
     # 商品IDと銘柄の対応が公開されていないため、取引所の価格に最も近い商品を選ぶ
+    # 商品IDは 4桁(1001=BTC など)が販売所、5桁(10001〜)がレバレッジ取引。販売所だけを対象にする
     best = None
     for r in ctx["gmo_rates"]:
-        if not (r.get("bidValidFlag") and r.get("askValidFlag")):
+        if not (r.get("bidValidFlag") and r.get("askValidFlag")) or int(r["productId"]) >= 10000:
             continue
         mid = (num(r["bid"]) + num(r["ask"])) / 2
         gap = abs(mid / ref - 1)
@@ -134,8 +135,8 @@ def dealer_gmo(coin, ctx):
     if best is None or best[0] > 0.03:
         raise ValueError("GMO販売所の該当商品が見つからない")
     # 2位候補も近い場合は取り違えの恐れがあるので不採用
-    close = [r for r in ctx["gmo_rates"]
-             if abs(((num(r["bid"]) + num(r["ask"])) / 2) / ref - 1) < 0.03]
+    close = [r for r in ctx["gmo_rates"] if int(r["productId"]) < 10000
+             and abs(((num(r["bid"]) + num(r["ask"])) / 2) / ref - 1) < 0.03]
     if len(close) > 1:
         desc = ";".join(f"{r['productId']}:{r['bid']}/{r['ask']}" for r in close)
         raise ValueError(f"GMO販売所の候補が複数: {desc}")
