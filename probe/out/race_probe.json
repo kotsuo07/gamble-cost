@@ -1,0 +1,65 @@
+{
+ "boat_K": {
+  "url": "https://www1.mbrace.or.jp/od2/K/202611/k261101.lzh",
+  "status": 200,
+  "len": 39754,
+  "ctype": "application/x-lzh-compressed",
+  "head": ""
+ },
+ "boat_B": {
+  "url": "https://www1.mbrace.or.jp/od2/B/202611/b261101.lzh",
+  "status": 200,
+  "len": 32492,
+  "ctype": "application/x-lzh-compressed",
+  "head": ""
+ },
+ "boat_web_result": {
+  "url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=04&hd=20261101",
+  "status": 200,
+  "len": 58529,
+  "ctype": "text/html;charset=UTF-8",
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n\t  \n\t  <head id=\"TRACP110A_1\">\n\t\t<meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\" /> \n\t    <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n\t    <meta charset=\"UTF-8\" />\n\t    <title>結果｜BOAT RACE オフィシャルウェブサイト</title>\n\t    <meta name=\"Description\" content=\"\" />\n\t    <meta name=\"Keywords\" content=\"\" />\n\t    <meta name=\"format-detection\" content=\"telephone=no\" />\n\t    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n\t    <link rel=\"stylesheet\" href=\"/static_extra/pc/css/main.css\" />\n\t    <link rel=\"stylesheet\" href=\"/static_extra/pc/css/3rdadd_main.css\" />\n\t    <script src=\"/static_extra/js/libs/jquery-1.11.3.min.js\"></script>\n\t\t<script src=\"/static_extra/pc/js/libs/modernizr.min.js\"></script>\n\t    <script src=\"/owpc/TRAC110-TRACPC110PR.js\"></script>\n\t    <script src=\"/owpc/js/ow-common.js\"></script>\n<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push([\"addVar\",{\"rua.upush\":\"false\",\"rua.cpush\":\"false\",\"rua.upre\":\"false\",\"rua.cpre\":\"false\",\"rua.uprl\":\"false\",\"rua.cprl\":\"false\",\"rua.cprf\":\"false\",\"rua.trans\":\"\",\"rua.cook\":\"false\",\"rua.ims\":\"false\",\"rua.ufprl\":\"false\",\"rua.cfprl\":\"false\",\"rua.isuxp\":\"false\",\"rua.texp\":\"norulematch\",\"rua.ceh\":\"false\",\"rua.ueh\":\"false\",\"rua.ieh.st\":\"0\"}]);</script>\n                                <script>!function(e){var n=\"https://s.go-mpulse.net/boomerang/\";if(\"False\"==\"True\")e.BOOMR"
+ },
+ "keirin_top": {
+  "url": "https://keirin.jp/pc/top",
+  "status": 200,
+  "len": 76504,
+  "ctype": "text/html;charset=UTF-8",
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<!DOCTYPE html>\n<html lang=\"ja\" xmlns=\"http://www.w3.org/1999/xhtml\"><head id=\"j_idt2\">\n\t<meta http-equiv=\"Content-Type\" content=\"text/html\" charset=\"utf-8\" />\n\t<meta http-equiv=\"content-script-type\" content=\"text/javascript\" />\n\t<meta http-equiv=\"content-style-type\" content=\"text/css\" />\n\t<meta http-equiv=\"imagetoolbar\" content=\"no\" />\n\t<meta name=\"author\" content=\"JKA\" />\n\t<meta name=\"copyright\" content=\"COPYRIGHT(C) JKA. ALL RIGHTS RESERVED.\" />\n\t<meta name=\"robots\" content=\"INDEX,FOLLOW\" />\n\n\t<title>トップページ｜KEIRIN.JP</title>\n\n\t<meta name=\"description\" content=\"競輪の公式サイト。初心者向けガイドが充実！予想に役立つ情報収集、ネットで投票、レース映像視聴が全て可能！安心・安全なオフィシャルサイトをご利用ください！\" />\n\n\t<link rel=\"icon\" href=\"/pc/static/img/common/favicon.ico\" />\n\t<link rel=\"stylesheet\" href=\"/pc/static/css/common/bootstrap.min.css\" /> \n\t<link rel=\"stylesheet\" href=\"/pc/static/css/common/bootstrap-theme.min.css\" />\n\t<link rel=\"stylesheet\" href=\"/pc/static/css/common/font-awesome.min.css\" /> \n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/pc/static/css/common/jquery-ui.css\" />\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/pc/static/css/subdialog.css\" />\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/pc/static/js/slick/slick.css\" />\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/pc/static/js/slick/slick-theme.css\" />\n"
+ },
+ "keirin_robots": {
+  "url": "https://keirin.jp/robots.txt",
+  "status": 200,
+  "len": 1025,
+  "ctype": "text/plain; charset=UTF-8",
+  "head": "User-agent: *\nDisallow:/\nAllow:/pc/top\nAllow:/pc/raceschedule\nAllow:/pc/graderaceschedule\nAllow:/pc/votinglist\nAllow:/pc/search\nAllow:/pc/racerprofile\nAllow:/pc/jyolist\nAllow:/pc/jyogailist\nAllow:/pc/weeklywinnerlist\nAllow:/pc/dividendranking\nAllow:/pc/jyobunseki\nAllow:/pc/jyogaiguide\nAllow:/pc/jyogaisellinfo\nAllow:/pc/jyoguide\nAllow:/pc/jyosellinfo\nAllow:/pc/prizeranking\nAllow:/pc/racerrecordranking\nAllow:/pc/topicslist\nAllow:/pc/topicsdetail\nAllow:/pc/rmationlist\nAllow:/pc/rmationdetail\nAllow:/sp/top\nAllow:/sp/raceschedule\nAllow:/sp/graderaceschedule\nAllow:/sp/votinglist\nAllow:/sp/racersearch\nAllow:/sp/racerprofile\nAllow:/sp/racerracentrecord\nAllow:/sp/racertotalrecord\nAllow:/sp/jyolist\nAllow:/sp/jyogailist\nAllow:/sp/topicslist\nAllow:/sp/topicsdetail\nAllow:/sp/rmationlist\nAllow:/sp/jyoguide\nAllow:/sp/jyosellinfo\nAllow:/sp/jyogaiguide\nAllow:/sp/jyogaisellinfo\nAllow:/sp/rmationdetail\nAllow:/sp/banklist\nAllow:/pc/static/beginner/\nAllow:/pc/dfw/portal/guest/\nAllow:/sp/static/beginner\nAllow:/sp/dfw/portal/guest/\n"
+ },
+ "jra_top": {
+  "url": "https://www.jra.go.jp/",
+  "status": 200,
+  "len": 97241,
+  "ctype": "text/html",
+  "head": "<!doctype html>\n<html lang=\"ja\">\n<head>\n<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-PTJSNZGJ');</script>\n<!-- End Google Tag Manager -->\n\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=Shift_JIS\" />\n<meta name=\"theme-color\" content=\"#014C2C\" />\n<title>JRA���{�������n��</title>\n<meta name=\"viewport\" content=\"width=1200\" />\n<meta name=\"description\" content=\"JRA���{�������n��̌����z�[���y�[�W�ł��B�o�n�\\�A�I�b�Y�A���ߋ��A���[�X���ʂȂǂ̊m�F��C���^�[�l�b�g���[���s���A�܂��A�S���̋��n��A�E�C���Y�̃C�x���g���Ȃǒ������n�Ɋւ��邱�Ƃ��f�ڂ��Ă��܂��B\" />\n<link rel=\"apple-touch-icon-precomposed\" href=\"/apple-touch-icon.png\">\n<link rel=\"manifest\" href=\"/manifest.webmanifest\">\n\n<meta property=\"og:title\" content=\"JRA���{�������n��\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:url\" content=\"https://www.jra.go.jp/\" />\n<meta property=\"og:image\" content=\"https://www.jra.go.jp/ogp.webp\" />\n<meta property=\"og:description\" content=\"JRA���{�������n��̌����z�[���y�[�W�ł��B�o�n�\\�A�I�b�Y�A���ߋ��A���[�X���ʂȂǂ̊m�F��C���^�[�l�b�g���[���s���A�܂��A�S���̋��n��A�E�C���Y�̃C�x���g���Ȃǒ������n�Ɋւ��邱�Ƃ��f�ڂ��Ă��܂��B\" />\n<meta"
+ },
+ "jra_robots": {
+  "url": "https://www.jra.go.jp/robots.txt",
+  "status": 200,
+  "len": 27,
+  "ctype": "text/plain",
+  "head": "User-agent: *\r\nDisallow: \r\n"
+ },
+ "jra_result": {
+  "url": "https://www.jra.go.jp/JRADB/accessS.html",
+  "status": 200,
+  "len": 56070,
+  "ctype": "text/html",
+  "head": "<!doctype html>\n<html lang=\"ja\">\n<head>\n<meta charset=\"Shift_JIS\">\n<title>�p�����[�^�G���[�@JRA</title>\n\n<link rel=\"stylesheet\" href=\"/common_r/css/base_property.css\" />\n<link rel=\"stylesheet\" href=\"/common_d/css/reset.css\" />\n<link rel=\"stylesheet\" href=\"/JRADB/common_d/css/fonts.css\" />\n<link rel=\"stylesheet\" href=\"/JRADB/common_d/css/fontawesome_all.css\">\n<link rel=\"stylesheet\" href=\"/JRADB/common_d/css/v4-shims.css\">\n<link rel=\"stylesheet\" href=\"/common_d/css/frame_r.css?version=202510\" />\n<link rel=\"stylesheet\" href=\"/JRADB/common_d/css/component_d.css?version=202412\" />\n<link rel=\"stylesheet\" href=\"/JRADB/common_d/js/jquery.rcrumbs.css\" />\n<link rel=\"stylesheet\" href=\"/JRADB/common_d/css/kaisai_info.css?version=2021\" />\n<link rel=\"stylesheet\" href=\"/JRADB/common_d/css/error.css\" />\n\n<script src=\"/JRADB/js/common2.js\"></script>\n<script src=\"/JRADB/common_d/js/jquery-3.5.1.min.js\"></script>\n<script src=\"/JRADB/common_d/js/jquery.easing.min.js\"></script>\n<script src=\"/JRADB/common_d/js/jquery.cookie.js?version=2021\"></script>\n<script type=\"text/javascript\" src=\"//web-cache.stream.ne.jp/web/jra/onetag2020/jstUtil.js\" charset=\"Shift_JIS\"></script>\n<script src=\"//web-cache.stream.ne.jp/web/jra/onetag2020/eqOnetag.js\"></script>\n<script src=\"/common_r/header/js/header_r.js?version=202604\"></script>\n<script src=\"/common_r/footer/js/page_top.js?version=202500\"></script>\n<script src=\"/JRADB/common_d/pagetop/js/page_top.js?version=2021\"></script>\n<script src=\"/JRADB/common_d/js/anc"
+ },
+ "boat_robots": {
+  "url": "https://www.boatrace.jp/robots.txt",
+  "status": 200,
+  "len": 26,
+  "ctype": "text/plain",
+  "head": "User-agent: *\r\nDisallow:\r\n"
+ }
+}
