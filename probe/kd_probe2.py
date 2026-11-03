@@ -6,9 +6,9 @@ def get(url):
 def text(b): return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", re.sub(r"(?s)<script.*?</script>", " ", b)))
 out = {}
 t = text(get("https://keirin.kdreams.jp/info/sitepolicy/"))
-i = t.find("サイトポリシー")
-out["sitepolicy"] = t[i:i+5000]
-t = text(get("https://keirin.kdreams.jp/hofu/raceresult/63202610310400/"))
+out["sp_hits"] = [t[max(0,m.start()-200):m.start()+300] for m in re.finditer(r"著作|複製|転載|禁止|無断|二次利用|自動|クロール|ロボット", t)][:15]
+out["sp_len"] = len(t)
+t = text(get("https://keirin.kdreams.jp/hofu/raceresult/63202610310300/"))
 i = t.find("着")
 out["result"] = t[t.find("1R"):t.find("1R")+3500]
 os.makedirs("probe/out", exist_ok=True)
