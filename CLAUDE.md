@@ -20,7 +20,14 @@
 5. `pip install -q jinja2 markdown pyyaml && python scripts/build_site.py` でビルドが通ることを確認
 6. `git add content/posts && git commit -m "記事: タイトル" && git push origin main`(push 前に `git pull --rebase`)
 7. 数分後に `https://api.github.com/repos/kotsuo07/gamble-cost/actions/runs?per_page=3` で collect-and-deploy が success になったか確認。失敗していたら原因を直して再 push
-8. 最後に、書いた記事のタイトルと要点を2〜3行で報告する(問題があればそれも)
+8. 最後に、書いた記事のタイトルと要点を2〜3行で報告する(問題があればそれも)。報告は日本語で書く
+9. 報告には PV 数も入れる。`data/pageviews.json`(Actions が GoatCounter API から1日4回更新)の `total`(開設以来の累計)・`yesterday`(前日)・`last_7d`(直近7日)と、`by_path` の上位3ページを書き、`fetched_at` を添える。ファイルが無い・古い(24時間以上前)ときは「PV未取得」とその理由(`config/site.json` の `goatcounter_code` 未設定、Secret `GOATCOUNTER_TOKEN` 未登録など)を書く
+
+## アクセス解析(GoatCounter)
+
+- 計測タグは `config/site.json` の `goatcounter_code` が空でないときだけ全ページに入る
+- PV 取得は `scripts/fetch_pv.py`。トークンはリポジトリの Secret `GOATCOUNTER_TOKEN` に置き、リポジトリやチャットには書かない
+- `goatcounter_code` を設定したら、`content/pages/privacy.md` の「アクセス解析・広告について」を GoatCounter(Cookie を使わないアクセス解析)を使っている旨に更新する
 
 ## 記事の種類(曜日でローテーション。データが足りない種類は飛ばして次へ)
 
