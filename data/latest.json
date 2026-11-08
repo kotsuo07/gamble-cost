@@ -1,9 +1,9 @@
 {
- "fetched_at": "2026-11-08T18:05:34+09:00",
+ "fetched_at": "2026-11-08T18:08:35+09:00",
  "ref_mid": {
   "BTC": 12022085.5,
-  "ETH": 354370.0,
-  "XRP": 184.1635
+  "ETH": 354401.5,
+  "XRP": 184.19
  },
  "rows": [
   {
@@ -18,23 +18,23 @@
    "status": "ok",
    "note": "",
    "rt_10000_pct": 0.3164,
-   "rt_100000_pct": 0.3165,
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "rt_100000_pct": 0.3171,
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "BTC",
    "venue": "coincheck",
    "type": "exchange",
-   "bid": 12023728.0,
-   "ask": 12026900.0,
+   "bid": 12026711.0,
+   "ask": 12029365.0,
    "ref_mid": 12022085.5,
-   "spread_pct": 0.0264,
+   "spread_pct": 0.0221,
    "fee_pct": 0.0,
    "status": "ok",
    "note": "",
-   "rt_10000_pct": 0.0264,
-   "rt_100000_pct": 0.0281,
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "rt_10000_pct": 0.0221,
+   "rt_100000_pct": 0.0221,
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "BTC",
@@ -48,15 +48,15 @@
    "status": "ok",
    "note": "",
    "rt_10000_pct": 0.1998,
-   "rt_100000_pct": 0.2081,
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "rt_100000_pct": 0.2137,
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "BTC",
    "venue": "gmo",
    "type": "exchange",
-   "bid": 12019999.0,
-   "ask": 12020000.0,
+   "bid": 12021957.0,
+   "ask": 12021958.0,
    "ref_mid": 12022085.5,
    "spread_pct": 0.0,
    "fee_pct": 0.05,
@@ -64,22 +64,22 @@
    "note": "",
    "rt_10000_pct": 0.1,
    "rt_100000_pct": 0.1,
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "BTC",
    "venue": "bittrade",
    "type": "exchange",
-   "bid": 12023434.0,
-   "ask": 12025636.0,
+   "bid": 12023547.0,
+   "ask": 12024745.0,
    "ref_mid": 12022085.5,
-   "spread_pct": 0.0183,
+   "spread_pct": 0.01,
    "fee_pct": 0.0,
    "status": "ok",
    "note": "",
-   "rt_10000_pct": 0.0343,
+   "rt_10000_pct": 0.0262,
    "rt_100000_pct": 0.0462,
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "BTC",
@@ -87,14 +87,14 @@
    "type": "dealer",
    "ref_mid": 12022085.5,
    "fee_pct": 0,
-   "bid": 11659751.0,
-   "ask": 12380974.0,
+   "bid": 11660799.0,
+   "ask": 12382087.0,
    "spread_pct": 6.0,
    "rt_10000_pct": 5.8253,
    "rt_100000_pct": 5.8253,
    "status": "ok",
    "note": "",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "BTC",
@@ -102,14 +102,14 @@
    "type": "dealer",
    "ref_mid": 12022085.5,
    "fee_pct": 0,
-   "bid": 11718738.0,
-   "ask": 12313536.0,
+   "bid": 11720501.0,
+   "ask": 12315389.0,
    "spread_pct": 4.95,
    "rt_10000_pct": 4.8304,
    "rt_100000_pct": 4.8304,
    "status": "ok",
    "note": "",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "BTC",
@@ -117,94 +117,94 @@
    "type": "dealer",
    "ref_mid": 12022085.5,
    "fee_pct": 0,
-   "bid": 11672466.0,
-   "ask": 12397939.0,
-   "spread_pct": 6.0279,
-   "rt_10000_pct": 5.8516,
-   "rt_100000_pct": 5.8516,
+   "bid": 11674233.0,
+   "ask": 12399850.0,
+   "spread_pct": 6.0282,
+   "rt_10000_pct": 5.8518,
+   "rt_100000_pct": 5.8518,
    "status": "ok",
    "note": "",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "ETH",
    "venue": "bitflyer",
    "type": "dealer",
-   "ref_mid": 354370.0,
+   "ref_mid": 354401.5,
    "fee_pct": 0,
    "status": "error",
    "note": "ValueError('bitFlyer販売所はBTCのみ対応')",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "ETH",
    "venue": "gmo",
    "type": "dealer",
-   "ref_mid": 354370.0,
+   "ref_mid": 354401.5,
    "fee_pct": 0,
-   "bid": 345524.0,
-   "ask": 363062.0,
+   "bid": 345567.0,
+   "ask": 363107.0,
    "spread_pct": 4.9501,
-   "rt_10000_pct": 4.8306,
-   "rt_100000_pct": 4.8306,
+   "rt_10000_pct": 4.8305,
+   "rt_100000_pct": 4.8305,
    "status": "ok",
    "note": "",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "ETH",
    "venue": "sbivc",
    "type": "dealer",
-   "ref_mid": 354370.0,
+   "ref_mid": 354401.5,
    "fee_pct": 0,
-   "bid": 342714.0,
-   "ask": 366943.0,
+   "bid": 342740.0,
+   "ask": 366971.0,
    "spread_pct": 6.8284,
-   "rt_10000_pct": 6.6029,
-   "rt_100000_pct": 6.6029,
+   "rt_10000_pct": 6.603,
+   "rt_100000_pct": 6.603,
    "status": "ok",
    "note": "",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "XRP",
    "venue": "bitflyer",
    "type": "dealer",
-   "ref_mid": 184.1635,
+   "ref_mid": 184.19,
    "fee_pct": 0,
    "status": "error",
    "note": "ValueError('bitFlyer販売所はBTCのみ対応')",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "XRP",
    "venue": "gmo",
    "type": "dealer",
-   "ref_mid": 184.1635,
+   "ref_mid": 184.19,
    "fee_pct": 0,
-   "bid": 179.634,
-   "ask": 188.751,
-   "spread_pct": 4.9497,
-   "rt_10000_pct": 4.8302,
-   "rt_100000_pct": 4.8302,
+   "bid": 179.731,
+   "ask": 188.854,
+   "spread_pct": 4.9503,
+   "rt_10000_pct": 4.8307,
+   "rt_100000_pct": 4.8307,
    "status": "ok",
    "note": "",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   },
   {
    "coin": "XRP",
    "venue": "sbivc",
    "type": "dealer",
-   "ref_mid": 184.1635,
+   "ref_mid": 184.19,
    "fee_pct": 0,
-   "bid": 176.626,
-   "ask": 192.184,
+   "bid": 176.717,
+   "ask": 192.283,
    "spread_pct": 8.4369,
    "rt_10000_pct": 8.0954,
    "rt_100000_pct": 8.0954,
    "status": "ok",
    "note": "",
-   "fetched_at": "2026-11-08T18:05:34+09:00"
+   "fetched_at": "2026-11-08T18:08:35+09:00"
   }
  ]
 }
