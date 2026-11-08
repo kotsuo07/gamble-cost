@@ -8,6 +8,7 @@
 import json
 import os
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -25,12 +26,23 @@ def api(code, token, endpoint, **params):
         "Content-Type": "application/json",
         "User-Agent": "gamble-cost-pv/1.0",
     })
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace")[:300]
+        print(f"GoatCounter API {endpoint}: HTTP {e.code} {body}", file=sys.stderr)
+        raise
+
+
+def ts(day):
+    """日付(JST の 0 時)を API が受け付ける RFC3339(UTC)に変換する。"""
+    d = datetime.fromisoformat(str(day)).replace(tzinfo=JST)
+    return d.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def total(code, token, start, end):
-    return int(api(code, token, "stats/total", start=start, end=end).get("total", 0))
+    return int(api(code, token, "stats/total", start=ts(start), end=ts(end)).get("total", 0))
 
 
 def main():
@@ -53,7 +65,7 @@ def main():
         "last_7d": total(code, token, (today - timedelta(days=7)).isoformat(), today.isoformat()),
         "by_path": [],
     }
-    hits = api(code, token, "stats/hits", start=SINCE, end=end, limit=50).get("hits", [])
+    hits = api(code, token, "stats/hits", start=ts(SINCE), end=ts(end), limit=50).get("hits", [])
     for h in hits:
         out["by_path"].append({
             "path": h.get("path"),
