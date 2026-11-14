@@ -214,6 +214,9 @@ def main():
                "fee_pct": pct(fee), "status": "ok", "note": ""}
         for amt in AMOUNTS:
             row[f"rt_{amt}_pct"] = pct(roundtrip_loss(bids, asks, amt, fee))
+        # 異常値チェック: 最良売り注文(ask)以上の買い注文(bid)がある=板が交差している
+        if bb >= ba:
+            row.update({"status": "suspect", "note": "異常値の可能性(板の交差)"})
         rows.append(row)
 
     ctx = {}
